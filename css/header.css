@@ -21,9 +21,16 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    width: 600px;
+    object-position: right;
 }
 
 .centralization{
     max-width: 1000px;
     margin: 0 auto;
+}
+.left-header{
+    display: flex;
+    align-items: center;
+    height: 51px;
 }
