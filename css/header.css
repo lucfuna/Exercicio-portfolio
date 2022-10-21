@@ -1,0 +1,29 @@
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+.full-header{
+    width: 100%;
+    background: rgba(196, 196, 196, 0.11);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.452);
+}
+
+.mid-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.centralization{
+    max-width: 1000px;
+    margin: 0 auto;
+}
