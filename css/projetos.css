@@ -1,0 +1,126 @@
+.center{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#link-project {
+    background: linear-gradient(to right, #111825, #070635);
+}
+
+.project {
+    padding-top: 93px;
+}
+
+.project h2, .project a {
+    text-align: center;
+    padding-bottom: -15px;
+}
+
+.project h2 {
+    padding-bottom: 30px;
+    font-size: 40px;
+    color: white;
+}
+
+button {
+    padding: 10px 100px;
+    border-radius: 25px;
+    cursor: pointer;
+    color: white;
+    background-color: #01020a;
+    border: none;
+    transition: ease-in-out 0.3s;
+}
+
+button:hover {
+    background-color: #1e2450;
+}
+
+.git-repository {
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.git-repository a{
+    color: white;
+}
+
+.project a {
+    display: inline;
+}
+
+.project1 {
+    background-color: #C4C4C4;
+    height: 195px;
+    width: 310px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: ease-in-out 0.3s;
+}
+
+.project1 div p {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    color: #C4C4C4;
+}
+
+.project1:hover {
+    letter-spacing: 5px;
+}
+
+.project1 div {
+    background-color: #01020a;
+    width: 1000px;
+    text-align: center;
+    padding: 5% 0;
+    transform: rotate(-50deg);
+}
+
+.hidder {
+    opacity: 0;
+    display: none;
+    transition: 1000ms;
+}
+
+.line-projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+}
+
+
+@media (max-width:1200px) {
+  .project{
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+  }
+
+  #link-project {
+      display: flex;
+      justify-content: center;
+  }
+
+  .line-projects {
+      flex-direction: column;
+  }
+
+}
+@media (max-width:950px) {
+    .project1 {
+        max-width: 300px;
+    }
+
+}

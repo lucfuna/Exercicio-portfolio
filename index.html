@@ -4,15 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Portfólio | Lucas Funabashi</title>
 
-    <!--link com css do cabeçalho-->
+    <!--link dos arquivos CSS-->
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/sobre_mim.css">
+    <link rel="stylesheet" href="css/projetos.css">
     
     
 </head>
-<body>
+<body onload="typeWriter(fName);">
+  <input
+    id="close-menu"
+    class="close-menu"
+    type="checkbox"
+    aria-label="close-menu"
+    role="button"
+  />
+  <label
+    class="close-menu-label"
+    for="close-menu"
+    title="close menu"
+  ></label>
+
 <!--Cabeçalho-->
   <header class="header">
     <h1 class="portfolio">Portfólio
@@ -21,8 +36,8 @@
     <nav class="header-menu">
       <a class="menu-itens" href="#teste-inicio">Início</a>
       <a class="menu-itens" href="#link-sobre-mim">Sobre mim</a>
-      <a class="menu-itens" href="#projetos">Projetos</a>
-      <a class="menu-itens" href="#habilidades">Habilidades</a>
+      <a class="menu-itens" href="#link-project">Projetos</a>
+      <a class="menu-itens" href="#link-habilidades">Habilidades</a>
     </nav>
   </header>
 <!--Fim do cabeçalho-->
@@ -38,7 +53,9 @@
         <a class="link" href="https://www.linkedin.com/in/lucas-funabashi/" target="_blank" >Linkedin</a>
       </button>
     </section>
+    <section class="desenho">
       <img class="desenho2" src="/Exercicio-portfolio/Imgs/Portifolio_inicial-removebg-preview.png" alt="Eu-em-desenho"/>
+    </section>
   </section>
 
 <!--Inicio da tela Sobre Mim-->
@@ -71,31 +88,36 @@
   </section>
 <!-- fim da tela sobre mim -->
 <!-- Inicio Tela Projetos-->
-  <section class="project">
-    <section class="project-title">
-      <h2>PROJETOS</h2>
-    </section>
-    <section class="line-projects">
-      <div class="project"></div>
-        <div class="coming-soon"></div>
-      <div class="project"></div>
-        <div class="coming-soon"></div>
-      <div class="project"></div>
-        <div class="coming-soon"></div>
-      <div class="project"></div>
-        <div class="coming-soon"></div>
-      <div class="project"></div>
-        <div class="coming-soon"></div>
-      <div class="project"></div>
-        <div class="coming-soon"></div>
-    </section>
-    <button>Ver mais</button>
-    <section class="git-repository">
-      <a href="" target="_blank">Repositórios no GitHub</a>
+  <section class="project" id="link-project">
+    <section class="center project">
+      <h2 class="project-title">PROJETOS</h2>
+      <section class="line-projects">
+        <div class="project1">
+          <div class="coming-soon"><p>EM BREVE</p></div>
+        </div>
+        <div class="project1">
+          <div class="coming-soon"><p>EM BREVE</p></div>
+        </div>
+        <div class="project1">
+          <div class="coming-soon"><p>EM BREVE</p></div>
+        </div>
+        <div class="project1 hidder">
+          <div class="coming-soon"><p>EM BREVE</p></div>
+        </div>
+        <div class="project1 hidder">
+          <div class="coming-soon"><p>EM BREVE</p></div>
+        </div>
+        <div class="project1 hidder">
+          <div class="coming-soon"><p>EM BREVE</p></div>
+        </div>
+      </section>
+      <section class="git-repository">
+        <button>Ver mais</button>
+        <a href="https://github.com/lucfuna" target="_blank">Repositórios no GitHub</a>
+      </section>
     </section>
   </section>
-
-
-
+  <script src="./js/Scroll.js"></script>
+  <script src="./js/maquina_escrever.js"></script>
 </body>
 </html>
